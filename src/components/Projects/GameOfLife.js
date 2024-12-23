@@ -8,19 +8,35 @@ const INTERVAL = 100;
 
 // Preset patterns
 const PRESETS = {
-  Glider: [
-    [0, 1, 0],
-    [0, 0, 1],
-    [1, 1, 1],
-  ],
   Blinker: [
     [0, 1, 0],
     [0, 1, 0],
     [0, 1, 0],
   ],
-  Block: [
-    [1, 1],
-    [1, 1],
+  Pulsar: [
+    [0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+    [0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0],
+  ],
+  Glider: [
+    [0, 1, 1],
+    [1, 0, 1],
+    [0, 0, 1],
+  ],
+  Rpentomino: [
+    [0, 1, 1],
+    [1, 1, 0],
+    [0, 1, 0],
   ],
 };
 
@@ -32,7 +48,8 @@ const GameOfLife = () => {
     Clear: false,
     Glider: false,
     Blinker: false,
-    Block: false,
+    Pulsar: false,
+    Rpentomino: false,
   });
   const runningRef = useRef(isRunning);
   runningRef.current = isRunning;
@@ -138,7 +155,8 @@ const GameOfLife = () => {
         break;
       case 'Glider':
       case 'Blinker':
-      case 'Block':
+      case 'Pulsar':
+      case 'Rpentomino':
         loadPreset(PRESETS[label], label);
         break;
       default:
