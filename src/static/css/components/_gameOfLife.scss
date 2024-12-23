@@ -1,0 +1,36 @@
+.game-of-life {
+    max-width: calc(var(GRD_SZ) * (var(CELL_SIZE) + 1 ) + 2 * 1px);
+    margin: 0 auto;
+  
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .grid {
+      display: grid;
+      gap: 1px;
+      border: 1px solid map-get($palette, border);
+      background-color: map-get($palette, bg-alt);
+      padding: 10px;
+      margin: 20px 0;
+    }
+  
+    .cell {
+      cursor: pointer;
+      transition: background-color 0.2s;
+      border: 1px solid map-get($palette, border);
+      background-color: map-get($palette, bg);
+  
+      &.alive {
+        background-color: map-get($palette, accent);
+      }
+  
+      &:hover {
+        background-color: map-get($palette, accent);
+      }
+    }
+  }
+
+
