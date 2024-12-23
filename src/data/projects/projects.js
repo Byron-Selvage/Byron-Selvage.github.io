@@ -6,7 +6,7 @@ const data = [
     link: '/projects/neural-chaos',
     date: '2024-12-10',
     desc:
-      'Exploring chaotic dynamics of neurons in Matlab using the FitzHugh-Nagumo model',
+      'Exploring chaotic dynamics of neurons and neuron chains in Matlab using the FitzHugh-Nagumo model',
   },
   {
     title: 'Predicting Student Outcomes',
@@ -14,39 +14,39 @@ const data = [
     link: '/projects/student-outcomes',
     date: '2024-12-10',
     desc:
-      'Wow such desc',
-  },
-  {
-    title: 'Conway\'s Game of Life',
-    tags: ['Matlab'],
-    link: '/projects/conway',
-    date: '2015-06-28',
-    desc:
-      'Wow such desc',
-  },
-  {
-    title: 'Hamming Codes',
-    tags: ['Matlab'],
-    link: '/projects/hamming',
-    date: '2015-06-28',
-    desc:
-      'Wow such desc',
-  },
-  {
-    title: 'Heat Diffusion',
-    tags: ['C++'],
-    link: '/projects/heat-diffusion',
-    date: '2015-06-28',
-    desc:
-      'Wow such desc',
+      'Using Python and machine learning libraries like Scikit-Learn and TensorFlow to predict student outcomes from education data',
   },
   {
     title: 'Personal Website',
     tags: ['JavaScript'],
     link: '/projects/personal-website',
-    date: '2015-06-28',
+    date: '2024-12-20',
     desc:
-      'Wow such desc',
+      'The one you\'re browsing right now!',
+  },
+  {
+    title: 'Heat Diffusion',
+    tags: ['C++'],
+    link: '/projects/heat-diffusion',
+    date: '2024-05-28',
+    desc:
+      'Modeling heat diffusion using the heat equation in C++',
+  },
+  {
+    title: 'Conway\'s Game of Life',
+    tags: ['Matlab'],
+    link: '/projects/conway',
+    date: '2023-12-21',
+    desc:
+      'Programming Conway\'s Game of Life in Matlab',
+  },
+  {
+    title: 'Hamming Codes',
+    tags: ['Python'],
+    link: '/projects/hamming',
+    date: '2023-05-28',
+    desc:
+      'Writing a Hamming Code error detection and correction program in Python using NumPy',
   },
 ];
 

@@ -1,42 +1,12 @@
 const skills = [
   {
-    title: 'Javascript',
-    competency: 1,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'React',
-    competency: 1,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Numpy',
-    competency: 3,
-    category: ['Data Science', 'Data Engineering', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Tensorflow + Keras',
-    competency: 3,
-    category: ['ML Engineering', 'Python'],
-  },
-  {
-    title: 'Jupyter',
-    competency: 3,
-    category: ['Data Science', 'Python'],
-  },
-  {
     title: 'Python',
     competency: 5,
-    category: ['Languages', 'Python', 'ML Engineering'],
+    category: ['Languages', 'Python', 'Machine Learning', 'Data Science'],
   },
   {
     title: 'C++',
-    competency: 1,
-    category: ['Languages'],
-  },
-  {
-    title: 'Matlab',
-    competency: 2,
+    competency: 4,
     category: ['Languages'],
   },
   {
@@ -45,24 +15,59 @@ const skills = [
     category: ['Languages'],
   },
   {
+    title: 'Matlab',
+    competency: 4,
+    category: ['Languages'],
+  },
+  {
+    title: 'Javascript',
+    competency: 1,
+    category: ['Languages'],
+  },
+  {
+    title: 'Numpy',
+    competency: 3,
+    category: ['Data Science', 'Python', 'Machine Learning'],
+  },
+  {
+    title: 'Tensorflow',
+    competency: 2,
+    category: ['Machine Learning', 'Python'],
+  },
+  {
+    title: 'Jupyter',
+    competency: 4,
+    category: ['Data Science', 'Python'],
+  },
+  {
     title: 'Data Visualization',
     competency: 3,
-    category: ['Data Science', 'Javascript'],
+    category: ['Data Science'],
   },
   {
     title: 'Pandas',
-    competency: 5,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
+    competency: 3,
+    category: ['Machine Learning', 'Python'],
   },
   {
     title: 'Matplotlib',
     competency: 3,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
+    category: ['Data Science', 'Machine Learning', 'Python'],
   },
   {
     title: 'Scikit-Learn',
-    competency: 4,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
+    competency: 3,
+    category: ['Machine Learning', 'Python'],
+  },
+  {
+    title: 'GitHub',
+    competency: 3,
+    category: ['Tools'],
+  },
+  {
+    title: 'LaTeX',
+    competency: 5,
+    category: ['Tools'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
@@ -72,14 +77,8 @@ const colors = [
   '#6968b3',
   '#37b1f5',
   '#40494e',
-  '#515dd4',
-  '#e47272',
-  '#cc7b94',
-  '#3896e2',
-  '#c3423f',
-  '#d75858',
   '#747fff',
-  '#64cb7b',
+  '#515dd4',
 ];
 
 const categories = [...new Set(skills.flatMap(({ category }) => category))]

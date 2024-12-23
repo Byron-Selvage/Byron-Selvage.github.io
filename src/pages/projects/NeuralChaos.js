@@ -25,7 +25,7 @@ const NeuralChaos = () => (
             <Link to="/projects/neural-chaos">Neural Chaos</Link>
           </h2>
           <p>
-            A Mathematical Biology Project (MATH 431) in collaboration with <a href="https://www.linkedin.com/in/nev-ahrendsen-b75a38270/" target="_blank" rel="noreferrer">Nev Ahrendsen</a>,
+            A Mathematical Biology (MATH 431) Project in collaboration with <a href="https://www.linkedin.com/in/nev-ahrendsen-b75a38270/" target="_blank" rel="noreferrer">Nev Ahrendsen</a>,
             Jenna Ramsey-Rutledge, and <a href="https://www.linkedin.com/in/kyle-sperber-55572b240/" target="_blank" rel="noreferrer">Kyle Sperber</a>
           </p>
           <div className="link-container">
@@ -42,29 +42,37 @@ const NeuralChaos = () => (
         <h2>Abstract</h2>
         <p>
           Neurons are fundamental units of the brain and nervous system, responsible
-          for receiving sensory input, sending motor commands, and transforming
-          electrical signals. This project investigates neuronal dynamics using the
-          FitzHugh-Nagumo model, exploring how different input currents influence
-          neuronal behavior, with a focus on understanding the emergence of chaos
-          and signal transmission in neural networks.
+          for receiving sensory input, sending motor commands to our muscles, and
+          transforming and relaying the electrical signals at every step in between.
+          This project investigates neuronal dynamics using the FitzHugh-Nagumo model,
+          exploring how different input currents influence neuronal behavior, with
+          a focus on understanding the emergence of chaos and signal transmission
+          in neural networks.
         </p>
       </section>
 
       <section id="biological_background">
         <h2>Biological Background</h2>
         <p>
-          Neurons act as electrical capacitors, storing charge until a threshold
-          is reached. When this threshold is met, the stored charge is released
-          through an action potential. This process involves complex ionic
-          movements: the neuron&apos;s exterior is positively charged, and as positive
-          ions flow in through sodium channels, the internal voltage increases.
+          Neurons are held in an imbalanced state of ionic concentration to create a charge
+          separation. Due to this charge separation, neurons act as electrical capacitors.
+          The inside of the neuron increases in charge due to the movement of ions through
+          mechanical channels until a threshold potential is reached, causing sodium channels
+          to open. The positive soidum ions flow into the neuron increasing the voltage inside the
+          neuron. This event as described is the action or membrane potential. Once this occurs, the
+          signal generated propagates through the axon all the way to the terminal where the neuron
+          releases neurotransmitters to pass along the signal and to repolarize itself. The
+          neurotransmitters cause negative ions (typically calcium) to flow through newly opened
+          channels to return the neuron to its resting state. During this process, the neuron can
+          enter a refractory period where the neuron is hyperpolarized which is when the cell
+          membrane becomes dominantly negatively charged. This behavior is demonstrated in Figure 1.
         </p>
-        <p>
-          After signal transmission, neurotransmitters facilitate the return to
-          the resting state through negative ion channels. This intricate process
-          can include a refractory period where the cell membrane becomes
-          predominantly negatively charged.
-        </p>
+        <img
+          src="/images/NeuralChaos/Neuron_Behavior.jpg"
+          alt="Figure 1: Neuron Behavior"
+          className="centered-figure"
+        />
+        <figcaption className="figure-caption">Figure 1: Neuron Behavior</figcaption>
       </section>
 
       <section id="mathematical_model">

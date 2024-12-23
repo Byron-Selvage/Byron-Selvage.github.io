@@ -1,3 +1,3 @@
-const tags = ['Featured', 'Python', 'C++', 'JavaScript'];
+const tags = ['Featured', 'Python', 'C++', 'Matlab', 'JavaScript'];
 
 export default tags;
