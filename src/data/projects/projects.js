@@ -10,7 +10,7 @@ const data = [
   },
   {
     title: 'Predicting Student Outcomes',
-    tags: ['Featured', 'Python'],
+    tags: ['Python'],
     link: '/projects/student-outcomes',
     date: '2024-12-10',
     desc:
@@ -34,7 +34,7 @@ const data = [
   },
   {
     title: 'Conway\'s Game of Life',
-    tags: ['Matlab'],
+    tags: ['Matlab', 'Featured'],
     link: '/projects/conway',
     date: '2023-12-21',
     desc:

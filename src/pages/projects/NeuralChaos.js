@@ -58,7 +58,7 @@ const NeuralChaos = () => (
           separation. Due to this charge separation, neurons act as electrical capacitors.
           The inside of the neuron increases in charge due to the movement of ions through
           mechanical channels until a threshold potential is reached, causing sodium channels
-          to open. The positive soidum ions flow into the neuron increasing the voltage inside the
+          to open. The positive sodium ions flow into the neuron increasing the voltage inside the
           neuron. This event as described is the action or membrane potential. Once this occurs, the
           signal generated propagates through the axon all the way to the terminal where the neuron
           releases neurotransmitters to pass along the signal and to repolarize itself. The

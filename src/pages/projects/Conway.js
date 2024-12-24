@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Main from '../../layouts/Main';
 import GameOfLife from '../../components/Projects/GameOfLife';
 
-// TODO: Improve writing, complete demo
+// TODO: Improve writing
 const sections = {
   about: 'About',
   rules: 'Rules',
@@ -19,9 +19,8 @@ const ConwaysGameOfLife = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/projects/conways-game-of-life">Conway&apos;s Game of Life</Link>
+            <Link to="/projects/conway">Conway&apos;s Game of Life</Link>
           </h2>
-          <p>A project exploring cellular automata, its history, and a modern interactive demo.</p>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (
               <h4 key={sec}>
@@ -35,27 +34,27 @@ const ConwaysGameOfLife = () => (
       <section id="about">
         <h2>About</h2>
         <p>
-          Conway&apos;s Game of Life, a cellular automaton
-          devised by mathematician John Conway in 1970,
-          simulates the evolution of cells on a grid based on simple rules.
-          Originally, I implemented the Game of Life using MATLAB in Fall 2023 to
-          practice fundamental programming techniques. This new version modernizes
-          the project with an interactive React-based interface.
+          Conway&apos;s Game of Life is a 2D cellular automaton
+          created by mathematician John Conway in 1970. The Game of
+          Life simulates the evolution of cells based on only four simple rules.
+          Despite it&apos;s simplicity, the Game of Life is Turing complete.
+          This means that anything that can be computed algorithmically can be
+          computed within the Game of Life.
         </p>
         <p>
-          The Game of Life is not only a fun programming challenge
-          but also a rich topic in computational theory,
-          demonstrating emergent complexity from simple rules.
-          It has fascinated computer scientists, mathematicians,
-          and hobbyists for decades.
+          I originally implemented the Game of Life using MATLAB in Fall 2023 to
+          practice basic MATLAB syntax. As I revisited that project during the creation
+          of this page however, I was inspired to create a new version. Below you
+          will find an interactive React-based implementation of the Game of Life.
+          I encourage you to try it out for yourself!
         </p>
       </section>
 
       <section id="rules">
         <h2>Rules</h2>
         <p>The Game of Life operates on a grid of cells,
-          each of which can be in one of two states: alive or dead.
-          The state of the grid evolves in steps, following these simple rules:
+          each of which can be either alive or dead.
+          The state of the grid evolves in steps, following these four rules:
         </p>
         <ul>
           <li><b>Underpopulation:</b> A live cell with fewer than two live neighbors dies.</li>
@@ -73,10 +72,10 @@ const ConwaysGameOfLife = () => (
         <h2>Demo</h2>
         <p>
           Below is an interactive version of Conway&apos;s Game of Life.
-          Choose from preset starting grids or click on cells to toggle them
-          before starting the simulation. Watch how patterns evolve over time!
+          Choose from the preset starting grids or click on cells to make your own.
+          Then start the simulation and see how the system evolves over time!
         </p>
-        <GameOfLife /> {/* Include the interactive Game of Life component */}
+        <GameOfLife />
       </section>
     </article>
   </Main>

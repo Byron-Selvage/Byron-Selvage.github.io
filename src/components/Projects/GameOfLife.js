@@ -1,12 +1,10 @@
 import React, { useState, useCallback, useRef } from 'react';
 import CategoryButton from '../Resume/Skills/CategoryButton';
 
-// TODO: Fix demo background, fix demo buttons
 const GRD_SZ = 25;
 const CELL_SIZE = 20;
-const INTERVAL = 100;
+const INTERVAL = 150;
 
-// Preset patterns
 const PRESETS = {
   Blinker: [
     [0, 1, 0],
@@ -80,12 +78,11 @@ const GameOfLife = () => {
         for (let j = 0; j < GRD_SZ; j += 1) {
           const neighbors = getNeighborCount(g, i, j);
           if (g[i][j]) {
-            // Cell is alive
             if (neighbors < 2 || neighbors > 3) {
-              newGrid[i][j] = 0; // Dies
+              newGrid[i][j] = 0;
             }
           } else if (neighbors === 3) {
-            newGrid[i][j] = 1; // Becomes alive
+            newGrid[i][j] = 1;
           }
         }
       }
@@ -95,6 +92,18 @@ const GameOfLife = () => {
 
     setTimeout(runSimulation, INTERVAL);
   }, []);
+
+  const setActiveButton = (name) => {
+    setActiveButtons({
+      Start: false,
+      Clear: false,
+      Glider: false,
+      Blinker: false,
+      Test: false,
+      Rpentomino: false,
+      [name]: true,
+    });
+  };
 
   const toggleCell = (i, j) => {
     if (!isRunning) {
@@ -116,7 +125,7 @@ const GameOfLife = () => {
 
   const loadPreset = (pattern, name) => {
     clearGrid();
-    const newGrid = grid.map((arr) => [...arr]);
+    const newGrid = Array(GRD_SZ).fill().map(() => Array(GRD_SZ).fill(0));
     const startX = Math.floor(GRD_SZ / 2 - pattern.length / 2);
     const startY = Math.floor(GRD_SZ / 2 - pattern[0].length / 2);
 
@@ -126,41 +135,57 @@ const GameOfLife = () => {
       });
     });
     setGrid(newGrid);
-    setActiveButtons((prev) => ({
-      ...prev,
-      [name]: true,
-      Clear: false,
-    }));
+    setActiveButton(name);
   };
 
   const toggleSimulation = () => {
-    setIsRunning(!isRunning);
-    setActiveButtons((prev) => ({
-      ...prev,
-      Start: !prev.Start,
-    }));
-    if (!isRunning) {
+    if (isRunning) {
+      setIsRunning(false);
+      runningRef.current = false;
+      setActiveButtons((prev) => ({
+        ...prev,
+        Start: false,
+      }));
+    } else {
+      setIsRunning(true);
       runningRef.current = true;
+      setActiveButtons((prev) => ({
+        ...prev,
+        Start: true,
+      }));
       runSimulation();
     }
   };
 
   const handleButtonClick = (label) => {
-    switch (label) {
-      case 'Start':
-        toggleSimulation();
-        break;
-      case 'Clear':
-        clearGrid();
-        break;
-      case 'Glider':
-      case 'Blinker':
-      case 'Pulsar':
-      case 'Rpentomino':
-        loadPreset(PRESETS[label], label);
-        break;
-      default:
-        break;
+    if (label === 'Start' || label === 'Pause') {
+      toggleSimulation();
+      setActiveButtons({
+        Start: false,
+        Clear: false,
+        Glider: false,
+        Blinker: false,
+        Test: false,
+        Rpentomino: false,
+      });
+    } else {
+      setActiveButton(label);
+      switch (label) {
+        case 'Start':
+          toggleSimulation();
+          break;
+        case 'Clear':
+          clearGrid();
+          break;
+        case 'Glider':
+        case 'Blinker':
+        case 'Pulsar':
+        case 'Rpentomino':
+          loadPreset(PRESETS[label], label);
+          break;
+        default:
+          break;
+      }
     }
   };
 
@@ -208,10 +233,6 @@ const GameOfLife = () => {
       </div>
     </div>
   );
-};
-
-GameOfLife.propTypes = {
-  // Add any props if needed
 };
 
 export default GameOfLife;
