@@ -262,11 +262,11 @@ const NeuralChaos = () => (
             Woodruff, A. (2023, October 3).
             What is a neuron? Queensland Brain Institute -
             University of Queensland.
-            https://qbi.uq.edu.au/brain/brain-anatomy/what-neuron#:~:text=Neurons%20(also%20called%20neurones%20or,although%20it’s%20not%20really%20known).
+            https://qbi.uq.edu.au/brain/brain-anatomy/what-neuron.
           </li>
           <li>
             Neuronal Activity. Neuronal Activity - an overview | ScienceDirect Topics. (n.d.).
-            https://www.sciencedirect.com/topics/neuroscience/neuronal-activity#:~:text=Neuronal%20activity%20refers%20to%20the,by%20neurons%20in%20the%20brain.
+            https://www.sciencedirect.com/topics/neuroscience/neuronal-activity.
           </li>
           <li>
             Gerstner, W., Kistler, W. M., Naud, R., & Paninski, L. (2016). Neuronal dynamics
