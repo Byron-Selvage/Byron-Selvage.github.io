@@ -15,6 +15,7 @@ const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 const NeuralChaos = lazy(() => import('./pages/projects/NeuralChaos'));
 const Conway = lazy(() => import('./pages/projects/Conway'));
+const Hamming = lazy(() => import('./pages/projects/Hamming'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -27,6 +28,7 @@ const App = () => (
         <Route path="*" element={<NotFound />} />
         <Route path="/projects/neural-chaos" element={<NeuralChaos />} />
         <Route path="/projects/conway" element={<Conway />} />
+        <Route path="/projects/hamming" element={<Hamming />} />
       </Routes>
     </Suspense>
   </BrowserRouter>

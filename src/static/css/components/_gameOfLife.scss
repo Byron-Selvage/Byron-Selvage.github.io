@@ -1,38 +1,54 @@
 .game-of-life {
-    text-align: center;
-    max-width: 550px !important;
-    margin: 0 auto;
+  text-align: center;
+  max-width: 550px !important;
+  margin: 0 auto;
   
-    .controls {
-      display: flex;
-      justify-content: center; 
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-  
-    .grid {
-      display: grid;
-      gap: 1px;
-      border: 1px solid map-get($palette, border);
-      background-color: map-get($palette, bg-alt);
-      padding: 10px;
-    }
-  
-    .cell {
-      cursor: pointer;
-      transition: background-color 0.2s;
-      border: 1px solid map-get($palette, border);
-      background-color: map-get($palette, bg);
-  
-      &.alive {
-        background-color: map-get($palette, accent);
-      }
-  
-      &:hover {
-        background-color: map-get($palette, accent);
-      }
+  .controls {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    // Adjust for smaller screens
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 5px;
     }
   }
 
+  .grid {
+    display: grid;
+    gap: 1px;
+    border: 1px solid map-get($palette, border);
+    background-color: map-get($palette, bg-alt);
+    padding: 10px;
 
+    // Adjust grid layout for smaller screens
+    @media (max-width: 600px) {
+      padding: 5px;
+      gap: 0.5px;
+    }
+  }
+
+  .cell {
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid map-get($palette, border);
+    background-color: map-get($palette, bg);
+
+    &.alive {
+      background-color: map-get($palette, accent);
+    }
+
+    &:hover {
+      background-color: map-get($palette, accent);
+    }
+
+    // Adjust cell size for smaller screens
+    @media (max-width: 600px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
