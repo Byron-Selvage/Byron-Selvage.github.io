@@ -16,20 +16,22 @@ const work = [
     name: 'Colorado School of Mines',
     position: 'Undergraduate Researcher',
     startDate: '2024-08-19',
-    summary: 'Working as part of an interdisciplinary team combining experience in chemistry, physics, mathematics, and computer science. Contributing to the development of Active Subspace Coarse-Graining, a novel computational framework for studying protein complex biogenesis and dynamics with potential applications in biotechnology, nanomedicine, and computational tool development.',
+    summary: 'As an Undergraduate Researcher at Colorado School of Mines, I am working as part of an interdisciplinary team combining experience in chemistry, physics, mathematics, and computer science. I am contributing to the development of Active Subspace Coarse-Graining, a novel computational framework for studying protein complex biogenesis and dynamics with potential applications in biotechnology, nanomedicine, and computational tool development.',
     highlights: [
-      'Research',
-      'Interdisciplinary collaboration',
+      'Derivation of equations of motion guiding subatomic particles in non-cartesian coordinate systems.',
+      'Contributions to machine learning models in the Active Subspace Coarse-Graining workflow.',
     ],
   },
   {
     name: 'Red Rocks Community College',
     position: 'Math Tutor',
     startDate: '2022-08-19',
-    summary: 'Collaborated alongside a fellow tutor to manage a math lab serving up to 30 students, offering support across a broad spectrum of math subjects spanning precalculus, calculus, differential equations, and linear algebra.  Supported students with varying needs, learning styles, and mathematical backgrounds while maintaining clear explanations of complex concepts.',
+    summary: ' As a Math Tutor at Red Rocks Community College, I provide support to students in courses from Pre-Calculus to Differential Equations and Linear Algebra. I am responsible for managing the Math Lab, ensuring students receive appropriate and productive assistance.',
     highlights: [
-      'Communication',
-      'Presentation',
+      'Assist up to 30 students at one time with understanding mathematical concepts and developing problem-solving skills.',
+      'Communicate concepts clearly to students with varying levels of mathematical experience and comfort.',
+      'Collaborate with other tutors to ensure all students get the support they need.',
+      'Maintain a safe and welcoming environment in the math lab.',
     ],
   },
   {
@@ -37,9 +39,12 @@ const work = [
     position: 'Co-Founder',
     startDate: '2020-06-19',
     endDate: '2024-08-19',
-    summary: 'Starting from an initial investment of $300, DBGB, an automotive parts company, achieved sales of over 15,000 parts and quarterly revenues exceeding $100,000. Responsibilities included overseeing all facets of the business, from the acquisition and disassembly of vehicles to managing inventory systems, optimizing online sales strategies, and expanding into vehicle repairs.',
+    summary: ' In June of 2020, I Co-Founded DBGB LLC, an automotive parts company. Starting from an initial investment of $300, DBGB has achieved sales of over 15,000 parts and quarterly revenues exceeding $100,000. I oversaw all facets of the business, from the acquisition and disassembly of vehicles to managing inventory systems, optimizing online sales strategies, and expanding into vehicle repairs.',
     highlights: [
-      'Entrepreneurship',
+      'Performed market analysis to identify pathways of growth.',
+      'Managed online inventory systems.',
+      'Managed business operations.',
+      'Conducted vehicle maintenance, repair, and disassembly.',
     ],
   },
 ];
