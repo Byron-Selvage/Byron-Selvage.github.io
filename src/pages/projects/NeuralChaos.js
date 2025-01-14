@@ -25,7 +25,7 @@ const NeuralChaos = () => (
             <Link to="/projects/neural-chaos">Neural Chaos</Link>
           </h2>
           <p>
-            A Mathematical Biology (MATH 431) Project in collaboration with <a href="https://www.linkedin.com/in/nev-ahrendsen-b75a38270/" target="_blank" rel="noreferrer">Nev Ahrendsen</a>,
+            A Mathematical Biology (MATH 431) project in collaboration with <a href="https://www.linkedin.com/in/nev-ahrendsen-b75a38270/" target="_blank" rel="noreferrer">Nev Ahrendsen</a>,
             Jenna Ramsey-Rutledge, and <a href="https://www.linkedin.com/in/kyle-sperber-55572b240/" target="_blank" rel="noreferrer">Kyle Sperber</a>
           </p>
           <div className="link-container">

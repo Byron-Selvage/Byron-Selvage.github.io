@@ -38,7 +38,7 @@ const data = [
     link: '/projects/conway',
     date: '2023-12-21',
     desc:
-      'Programming Conway\'s Game of Life in Matlab',
+      'Programming Conway\'s Game of Life - With an interactive demo!',
   },
   {
     title: 'Hamming Codes',
