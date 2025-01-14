@@ -17,14 +17,6 @@ const data = [
       'Using Python and machine learning libraries like Scikit-Learn and TensorFlow to predict student outcomes from education data',
   },
   {
-    title: 'Personal Website',
-    tags: ['JavaScript'],
-    link: '/projects/personal-website',
-    date: '2024-12-20',
-    desc:
-      'The one you\'re browsing right now!',
-  },
-  {
     title: 'Heat Diffusion',
     tags: ['C++'],
     link: '/projects/heat-diffusion',
