@@ -1,6 +1,21 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'One-Offs',
+    tags: ['Python', 'Matlab'],
+    link: '/projects/random',
+    desc:
+      'All my one-off projects that are too small to get their own write-up',
+  },
+  {
+    title: 'Image Compression',
+    tags: ['Python'],
+    link: '/projects/image-compression',
+    date: '2025-1-14',
+    desc:
+      'Image compression using Singular Value Decomposition in Python and PyTorch',
+  },
+  {
     title: 'Neural Chaos',
     tags: ['Featured', 'Matlab'],
     link: '/projects/neural-chaos',
