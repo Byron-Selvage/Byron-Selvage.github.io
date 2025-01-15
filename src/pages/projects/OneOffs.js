@@ -21,7 +21,7 @@ const OneOffs = () => {
       title="One Offs"
       description="Random small projects"
     >
-      <article className="post" id="neural-chaos">
+      <article className="post" id="one-offs">
         <header>
           <div className="title">
             <h2>
@@ -62,6 +62,7 @@ const OneOffs = () => {
             </p>
             <p>
             This method can be used for image compression by creating a low rank approximation of the original image. Try it for yourself!
+            The image below has original rank 512. Use the slider to adjust the rank and see how the image quality and storage requirement perform.
             </p>
             `,
           }}

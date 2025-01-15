@@ -48,6 +48,8 @@ const ImageCompression = () => {
               </div>
             ))}
           </div>
+          <p> </p>
+          <p style={{ textAlign: 'center' }}>Select Rank</p>
         </div>
       </div>
     </section>
