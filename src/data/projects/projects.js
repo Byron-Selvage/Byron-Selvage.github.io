@@ -48,7 +48,7 @@ const data = [
       'Programming Conway\'s Game of Life - With an interactive demo!',
   },
   {
-    title: 'Hamming Codes',
+    title: 'Hamming Code',
     tags: ['Python'],
     link: '/projects/hamming',
     date: '2023-05-28',
