@@ -6,20 +6,16 @@ import dayjs from 'dayjs';
  */
 const data = [
   {
-    label: 'Open github issues',
-    key: 'open_issues_count',
-  },
-  {
     label: 'Last updated on',
     key: 'pushed_at',
     format: (x) => dayjs(x).format('MMMM DD, YYYY'),
   },
   {
     // TODO update this with a pre-commit hook
-    /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
-    xargs -I file cat file | wc -l */
+    /* find . -type d \( -name "node_modules" -o -name ".git" \) -prune -o \
+    -type f -name "*.js" ! -name "*.min.js" -exec cat {} + | wc -l */
     label: 'Lines of Javascript powering this website',
-    value: '2150',
+    value: '2850',
   },
 ];
 

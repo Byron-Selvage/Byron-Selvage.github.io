@@ -6,7 +6,6 @@ import ImageCompression from '../../components/Projects/ImageCompression';
 
 const sections = {
   image_compression: 'Image Compression',
-  three_body: 'Three Body',
   strange_attractors: 'Strange Attractors',
 };
 
@@ -69,19 +68,6 @@ const OneOffs = () => {
           }}
           />
           <ImageCompression />
-        </section>
-
-        <section id="three_body">
-          <h2>Three Body</h2>
-          <p>
-            dsakl
-          </p>
-          <img
-            src="/images/NeuralChaos/Neuron_Behavior.jpg"
-            alt="Figure 1: Neuron Behavior"
-            className="centered-figure"
-          />
-          <figcaption className="figure-caption">TMP</figcaption>
         </section>
 
         <section id="strange_attractors">
