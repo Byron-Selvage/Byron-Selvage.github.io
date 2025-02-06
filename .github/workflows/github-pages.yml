@@ -1,11 +1,9 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -27,18 +25,22 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 10
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
           cache: "npm"
+
       - name: Install
         run: npm ci
+
       - name: Build and Render
         shell: bash
         run: |
@@ -66,12 +68,16 @@ jobs:
           NODE_ENV: production
           # Remove this line if you would like to skip using google analytics
           REACT_APP_GA_TRACKING_ID: UA-68649021-1
+
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: "build"
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
+        
