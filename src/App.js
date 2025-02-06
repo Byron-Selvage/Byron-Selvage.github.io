@@ -18,6 +18,7 @@ const Conway = lazy(() => import('./pages/projects/Conway'));
 const Hamming = lazy(() => import('./pages/projects/Hamming'));
 const Heat = lazy(() => import('./pages/projects/Heat'));
 const OneOffs = lazy(() => import('./pages/projects/OneOffs'));
+const StudentOutcomes = lazy(() => import('./pages/projects/StudentOutcomes'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -33,6 +34,7 @@ const App = () => (
         <Route path="/projects/hamming" element={<Hamming />} />
         <Route path="/projects/heat-diffusion" element={<Heat />} />
         <Route path="/projects/random" element={<OneOffs />} />
+        <Route path="/projects/student-outcomes" element={<StudentOutcomes />} />
       </Routes>
     </Suspense>
   </BrowserRouter>

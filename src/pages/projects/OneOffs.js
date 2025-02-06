@@ -73,7 +73,7 @@ const OneOffs = () => {
         <section id="strange_attractors">
           <h2>Strange Attractors</h2>
           <p>
-            DJSKL
+            Coming Soon! (Strange attractors are cool.)
           </p>
         </section>
       </article>

@@ -1,4 +1,5 @@
 #hamming {
+  max-width: 100%;
     .link-to {
       position: relative;
       top: -4.5em;
@@ -23,6 +24,7 @@
     }
 
     section {
+      max-width: 100%;
         scroll-margin-top: 4.5em;
     }
 
