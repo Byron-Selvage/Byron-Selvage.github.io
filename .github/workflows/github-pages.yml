@@ -72,6 +72,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "build"
+          name: "github-pages"  # Explicitly set the name
+          retention-days: 1
       - name: Verify artifact
         run: |
           if [ ! -f "$RUNNER_TEMP/artifact.tar" ]; then
@@ -82,3 +84,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          artifact_name: "github-pages"  # Match the name explicitly
+          token: ${{ secrets.GITHUB_TOKEN }}
