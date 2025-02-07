@@ -72,6 +72,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "build"
+      - name: Verify artifact
+        run: |
+          if [ ! -f "$RUNNER_TEMP/artifact.tar" ]; then
+            echo "Artifact not found at expected location"
+            exit 1
+          fi
+        shell: bash
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
