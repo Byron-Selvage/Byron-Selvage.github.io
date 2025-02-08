@@ -64,26 +64,12 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: production
-          # Remove this line if you would like to skip using google analytics
-          REACT_APP_GA_TRACKING_ID: UA-68649021-1
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "build"
-          name: "github-pages"  # Explicitly set the name
-          retention-days: 1
-      - name: Verify artifact
-        run: |
-          if [ ! -f "$RUNNER_TEMP/artifact.tar" ]; then
-            echo "Artifact not found at expected location"
-            exit 1
-          fi
-        shell: bash
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
-        with:
-          artifact_name: "github-pages"  # Match the name explicitly
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/deploy-pages@v4
