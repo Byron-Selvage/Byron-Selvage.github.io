@@ -19,7 +19,7 @@ const StudentOutcomes = () => (
           </h2>
           <p>
             A Data Science (CSCI 330) project in collaboration with <a href="https://www.linkedin.com/in/melody-goldanloo" target="_blank" rel="noreferrer">Melody Goldanloo</a> and
-            Jenna Ramsey-Rutledge
+            <a href="https://www.linkedin.com/in/jenna-ramsey-baa016156/" target="_blank" rel="noreferrer">Jenna Ramsey-Rutledge</a>
           </p>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (

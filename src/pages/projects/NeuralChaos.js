@@ -26,7 +26,7 @@ const NeuralChaos = () => (
           </h2>
           <p>
             A Mathematical Biology (MATH 431) project in collaboration with <a href="https://www.linkedin.com/in/nev-ahrendsen-b75a38270/" target="_blank" rel="noreferrer">Nev Ahrendsen</a>,
-            Jenna Ramsey-Rutledge, and <a href="https://www.linkedin.com/in/kyle-sperber-55572b240/" target="_blank" rel="noreferrer">Kyle Sperber</a>
+            <a href="https://www.linkedin.com/in/jenna-ramsey-baa016156/" target="_blank" rel="noreferrer">Jenna Ramsey-Rutledge</a>, and <a href="https://www.linkedin.com/in/kyle-sperber-55572b240/" target="_blank" rel="noreferrer">Kyle Sperber</a>
           </p>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (
