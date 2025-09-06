@@ -13,25 +13,40 @@
  */
 const work = [
   {
+    name: 'National Renewable Energy Laboratory',
+    position: 'Research Intern',
+    startDate: '2025-05-19',
+    summary: 'Worked as a research intern in the AI, Learning, and Intelligent Systems (ALIS) group at the NREL, focusing on the development of open-source tools for global optimization, surrogate modeling, and black-box problem solving.',
+    highlights: [
+      'Developed and published pyGOLD, an open-source Python library for testing global optimization algorithms.',
+      'Contributed to SOOGO, an open-source surrogate-based optimization library for black box problems.',
+      'Designed abstract interfaces and modular architecture for extendibility and user integration.',
+      'Implemented automated testing & deployment workflows with extensive user documentation.',
+      'Presented work in meetings, a research paper, and a poster session.',
+      'Selected to extend internship at NREL based on demonstrated contributions and performance.',
+    ],
+  },
+  {
     name: 'Colorado School of Mines',
     position: 'Undergraduate Researcher',
     startDate: '2024-08-19',
-    summary: 'As an Undergraduate Researcher at Colorado School of Mines, I am working as part of an interdisciplinary team combining experience in chemistry, physics, mathematics, and computer science. I am contributing to the development of Active Subspace Coarse-Graining, a novel computational framework for studying protein complex biogenesis and dynamics with potential applications in biotechnology, nanomedicine, and computational tool development.',
+    endDate: '2025-05-19',
+    summary: 'Contributed to the development of Active Subspace Coarse-Graining, a novel computational framework for studying protein complex biogenesis and dynamics with potential applications in biotechnology, nanomedicine, and computational tool development.',
     highlights: [
-      'Derivation of equations of motion guiding subatomic particles in non-cartesian coordinate systems.',
-      'Contributions to machine learning models in the Active Subspace Coarse-Graining workflow.',
+      'Derived equations of motion guiding subatomic particles in non-Cartesian coordinate systems.',
+      'Built machine learning models in the Active Subspace Coarse-Graining workflow.',
     ],
   },
   {
     name: 'Red Rocks Community College',
     position: 'Math Tutor',
     startDate: '2022-08-19',
-    summary: ' As a Math Tutor at Red Rocks Community College, I provide support to students in courses from Pre-Calculus to Differential Equations and Linear Algebra. I am responsible for managing the Math Lab, ensuring students receive appropriate and productive assistance.',
+    summary: 'Supported students in courses from Pre-Calculus to Differential Equations and Linear Algebra.',
     highlights: [
-      'Assist up to 30 students at one time with understanding mathematical concepts and developing problem-solving skills.',
-      'Communicate concepts clearly to students with varying levels of mathematical experience and comfort.',
-      'Collaborate with other tutors to ensure all students get the support they need.',
-      'Maintain a safe and welcoming environment in the math lab.',
+      'Assisted up to 30 students at one time with understanding mathematical concepts and developing problem-solving skills.',
+      'Communicated concepts clearly to students with varying levels of mathematical experience and comfort.',
+      'Collaborated with other tutors to ensure all students received the support they needed.',
+      'Maintained a safe and welcoming environment in the math lab.',
     ],
   },
   {
