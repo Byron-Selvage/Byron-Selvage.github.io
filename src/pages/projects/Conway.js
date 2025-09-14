@@ -2,9 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Main from '../../layouts/Main';
+
 const GameOfLife = dynamic(
   () => import('../../components/Projects/GameOfLife'),
-  { ssr: false }
+  { ssr: false },
 );
 
 // TODO: Improve writing
