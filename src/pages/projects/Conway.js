@@ -4,8 +4,10 @@ import dynamic from 'next/dynamic';
 import Main from '../../layouts/Main';
 
 const GameOfLife = dynamic(
-  () => import('../../components/Projects/GameOfLife'),
-  { ssr: false },
+  () => import('../../components/Projects/GameOfLife').catch(err => {
+    console.error('Failed to load GameOfLife:', err);
+  }),
+  { ssr: false }
 );
 
 // TODO: Improve writing
