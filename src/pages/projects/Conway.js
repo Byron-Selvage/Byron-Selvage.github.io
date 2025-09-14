@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import Main from '../../layouts/Main';
-import GameOfLife from '../../components/Projects/GameOfLife';
+const GameOfLife = dynamic(
+  () => import('../../components/Projects/GameOfLife'),
+  { ssr: false }
+);
 
 // TODO: Improve writing
 const sections = {
@@ -19,7 +23,7 @@ const ConwaysGameOfLife = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/projects/conway">Conway&apos;s Game of Life</Link>
+            <Link href="/projects/conway">Conway&apos;s Game of Life</Link>
           </h2>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (
