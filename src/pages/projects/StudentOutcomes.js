@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Main from '../../layouts/Main';
 
 const sections = {
@@ -15,7 +15,7 @@ const StudentOutcomes = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/projects/student-outcomes">Student Outcomes</Link>
+            <Link href="/projects/student-outcomes">Student Outcomes</Link>
           </h2>
           <p>
             A Data Science (CSCI 330) project in collaboration with <a href="https://www.linkedin.com/in/melody-goldanloo" target="_blank" rel="noreferrer">Melody Goldanloo</a> and

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Main from '../../layouts/Main';
 import ImageCompression from '../../components/Projects/ImageCompression';
 
@@ -25,7 +25,7 @@ const OneOffs = () => {
         <header>
           <div className="title">
             <h2>
-              <Link to="/projects/random">One-Offs</Link>
+              <Link href="/projects/random">One-Offs</Link>
             </h2>
             <p>
               My random projects that are too small to have their own page.

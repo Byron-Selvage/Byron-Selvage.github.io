@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import Main from '../layouts/Main';
 
@@ -15,7 +15,7 @@ const Stats = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/stats">Stats</Link>
+            <Link href="/stats">Stats</Link>
           </h2>
         </div>
       </header>

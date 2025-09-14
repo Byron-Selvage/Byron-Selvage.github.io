@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const PageNotFound = () => (
@@ -13,7 +13,7 @@ const PageNotFound = () => (
       </Helmet>
       <h1>Page Not Found</h1>
       <p>
-        <Link to="/"> Return Home</Link>
+        <Link href="/"> Return Home</Link>
       </p>
     </div>
   </HelmetProvider>

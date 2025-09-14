@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import ContactIcons from '../Contact/ContactIcons';
 
@@ -8,7 +8,7 @@ const { PUBLIC_URL } = process.env; // set automatically from package.json:homep
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
-      <Link to="/" className="logo">
+      <Link href="/" className="logo">
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
@@ -31,11 +31,11 @@ const SideBar = () => (
       <ul className="actions">
         <li>
           {window.location.pathname === '/' ? (
-            <Link to="/projects" className="button">
+            <Link href="/projects" className="button">
               My Projects
             </Link>
           ) : (
-            <Link to="/" className="button">
+            <Link href="/" className="button">
               Learn More
             </Link>
           )}
@@ -46,7 +46,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Byron Selvage <Link to="/">Byron-Selvage.github.io</Link>.
+        &copy; Byron Selvage <Link href="/">Byron-Selvage.github.io</Link>.
       </p>
     </section>
   </section>

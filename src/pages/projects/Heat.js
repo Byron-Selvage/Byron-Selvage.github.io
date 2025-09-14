@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Main from '../../layouts/Main';
 
 const sections = {
@@ -18,7 +18,7 @@ const Heat = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/projects/heat-diffusion">Heat Diffusion</Link>
+            <Link href="/projects/heat-diffusion">Heat Diffusion</Link>
           </h2>
           <p>A CSCI200: Programming Concepts project</p>
           <div className="link-container">

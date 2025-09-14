@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Main from '../../layouts/Main';
 
 const sections = {
@@ -25,7 +25,7 @@ const HammingCode = () => {
         <header>
           <div className="title">
             <h2>
-              <Link to="/projects/hamming">Hamming Code</Link>
+              <Link href="/projects/hamming">Hamming Code</Link>
             </h2>
             <div className="link-container">
               {Object.keys(sections).map((sec) => (

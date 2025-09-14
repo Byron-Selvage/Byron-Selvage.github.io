@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Main from '../../layouts/Main';
 
 const sections = {
@@ -22,7 +22,7 @@ const NeuralChaos = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/projects/neural-chaos">Neural Chaos</Link>
+            <Link href="/projects/neural-chaos">Neural Chaos</Link>
           </h2>
           <p>
             A Mathematical Biology (MATH 431) project in collaboration with <a href="https://www.linkedin.com/in/nev-ahrendsen-b75a38270/" target="_blank" rel="noreferrer">Nev Ahrendsen</a>,
