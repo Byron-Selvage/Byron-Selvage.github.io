@@ -9,7 +9,6 @@ const ScrollToTop = dynamic(() => import('../components/Template/ScrollToTop'), 
 const Navigation = dynamic(() => import('../components/Template/Navigation'), { ssr: false });
 const SideBar = dynamic(() => import('../components/Template/SideBar'), { ssr: false });
 
-
 const Main = (props) => (
   <HelmetProvider>
     <Analytics />
