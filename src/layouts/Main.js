@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import Analytics from '../components/Template/Analytics';
-import Navigation from '../components/Template/Navigation';
-import SideBar from '../components/Template/SideBar';
-import ScrollToTop from '../components/Template/ScrollToTop';
+import dynamic from 'next/dynamic';
+
+const Analytics = dynamic(() => import('../components/Template/Analytics'), { ssr: false });
+const ScrollToTop = dynamic(() => import('../components/Template/ScrollToTop'), { ssr: false });
+const Navigation = dynamic(() => import('../components/Template/Navigation'), { ssr: false });
+const SideBar = dynamic(() => import('../components/Template/SideBar'), { ssr: false });
+
 
 const Main = (props) => (
   <HelmetProvider>
