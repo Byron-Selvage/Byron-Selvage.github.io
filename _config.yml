@@ -1,34 +1,34 @@
 ### your site title here
 
-title: Your Name
+title: Byron Selvage
 description: subtitle | affiliations | motto
 
-baseurl: /gradfolio #name of GitHub repository
-url: "" #custom url to be used instead of GitHub repository
-email: #
+baseurl: /Byron-Selvage.github.io #name of GitHub repository
+url: "https://Byron-Selvage.github.io" #custom url to be used instead of GitHub repository
+email: bselvage20@gmail.com
 
 # Pagination
-paginate: 4
-permalink: /blog/:year/:title/
-paginate_path: /blog/page:num/
+# paginate: 4
+# permalink: /blog/:year/:title/
+# paginate_path: /blog/page:num/
 
 # Social media links in footer
-linkedin: "#"
-stackoverflow: "#"
-github: "#"
-researchgate: "#"
-orcid: "#"
-quora: "#"
-instagram: "#"
-facebook: "#"
-bluesky: "#"
+linkedin: "https://www.linkedin.com/in/byronselvage/"
+stackoverflow: 
+github: "https://github.com/Byron-Selvage"
+researchgate: 
+orcid:
+quora: 
+instagram: 
+facebook: 
+bluesky: 
 
 # Markdown
 highlighter: rouge
 markdown: kramdown
 
 # Tracker
-analytics:
+analytics: G-SQZ656H43K
 
 # optimization -> compress.html
 compress_html:
