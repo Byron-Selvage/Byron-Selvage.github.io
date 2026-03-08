@@ -8,8 +8,7 @@ published: true
 ## Education
 ---
 
-**Colorado School of Mines**</span>
-  <span>Golden, CO
+**Colorado School of Mines** Golden, CO
 
 **M.S. in Computational and Applied Mathematics**  
 *May 2027 (Expected)*
@@ -34,7 +33,7 @@ published: true
 - Researching compressed data formats for geologic imaging applications
 - Contributing to the open-source library DASCORE
 
-Research Participant Program Intern**, National Laboratory of the Rockies  
+**Research Participant Program Intern**, National Laboratory of the Rockies  
 *August 2025 - September 2025*
 
 - Contributed to SOOGO, an open-source Python library for derivative-free optimization algorithms
@@ -54,8 +53,8 @@ Research Participant Program Intern**, National Laboratory of the Rockies
 **Data Analyst**, Apiari LLC  
 *Freelance*
 
-- Analyzed de-identified electronic health record data to generate actionable healthcare analytics.
-- Built interactive dashboards to visualize hospital, provider, and indication-level trends.
+- Analyzed de-identified electronic health record data to generate actionable healthcare analytics
+- Built interactive dashboards to visualize hospital, provider, and indication-level trends
 
 **Undergraduate Research Assistant**, Colorado School of Mines  
 *August 2024 - May 2025*
@@ -75,7 +74,7 @@ Research Participant Program Intern**, National Laboratory of the Rockies
 **Co-Founder**, DBGB LLC  
 *June 2020 - August 2024*
 
-- Co-founded an automotive parts company, growing it from an initial investment of $300 to quarterly revenues exceeding $100,000
+- Co-founded an automotive parts company, growing it from an initial investment of \$300 to quarterly revenues exceeding \$100,000
 - Achieved sales of over 15,000 parts
 - Performed market analysis to identify growth pathways
 - Managed online inventory systems and business operations
@@ -116,7 +115,7 @@ Numpy, SciPy, TensorFlow, PyTorch, Pandas, Matplotlib, pyTest
 OpenMP, MPI, SLURM
 
 **Tools & Technologies**  
-Git, LaTeX
+Git, $\LaTeX$
 
 **Technical Areas**  
 Scientific Computing, Numerical Optimization, Machine Learning, Computational Modeling, Data Science, Parallel Computing
