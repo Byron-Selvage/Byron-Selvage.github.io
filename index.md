@@ -7,15 +7,18 @@ profile:
 published: true
 ---
 
-[Gradfolio](https://github.com/jitinnair1/gradfolio){:target="_blank"} is a responsive, dark-mode ready Jekyll theme designed keeping academia in mind. The easiest way to install the theme is to fork it using GitHub. Check the README file for [instructions](https://github.com/jitinnair1/gradfolio#installation){:target="_blank"}.
+Hi, I'm Byron. I'm a graduate student at the Colorado School of Mines pursuing an M.S. in Computational and Applied Mathematics. I enjoy solving problems in scientific computing, mathematical modeling, and optimization.
 
-If you want to use this space to write your biography here, edit the `index.md` file. You can put a picture in, too. Rename your picture to `profile.png` and put it in the `assets/images/` folder.
+Currently, I'm working as a Graduate Research Assistant within the Martin Group and the Center for Wave Phenomena, where I research compressed data formats for geologic imaging applications data and contribute to the open-source library [DASCORE](https://github.com/DASDAE/dascore).
 
-The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
+Previously, I interned at the National Laboratory of the Rockies (formerly NREL), where I developed [pyGOBLET](https://github.com/NatLabRockies/pyGOBLET), an open-source Python library for testing global optimization algorithms, and contributed to [SOOGO](https://github.com/NatLabRockies/soogo), a derivative-free optimization library.
 
-PS: If you liked the theme, do star it on GitHub!
+In December 2025, I graduated from Colorado School of Mines summa cum laude with a B.S. in Computational and Applied Mathematics, receiving the Outstanding Graduating Senior Award.
 
-### Also, check out:
+Some fun facts about me:
+- I spend ~20% of my time listening to music
+- I can juggle
+- I'm a cyclist with over 17,000mi logged on Strava
+- I love bad movies
 
-- [autoCV](https://github.com/jitinnair1/autocv) - a LaTeX template that builds and deploys the CV using GitHub Actions, so you will always have a ready link for your latest CV
-- [Tail](https://github.com/jitinnair1/tail) - a minimal, quick-setup template for a blog
+Thanks for checking out my website! While you're here, check out my [projects](/projects/) and [resume](/resume/).
