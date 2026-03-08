@@ -3,8 +3,8 @@
 title: Byron Selvage
 description: subtitle | affiliations | motto
 
-baseurl: /Byron-Selvage.github.io #name of GitHub repository
-url: "https://Byron-Selvage.github.io" #custom url to be used instead of GitHub repository
+baseurl: "/"
+url: "https://Byron-Selvage.github.io" 
 email: bselvage20@gmail.com
 
 # Pagination
