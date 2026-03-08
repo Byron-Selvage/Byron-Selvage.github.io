@@ -74,7 +74,7 @@ published: true
 **Co-Founder**, DBGB LLC  
 *June 2020 - August 2024*
 
-- Co-founded an automotive parts company, growing it from an initial investment of \$300 to quarterly revenues exceeding \$100,000
+- Co-founded an automotive parts company, growing it from an initial investment of $\$300$ to quarterly revenues exceeding $\$100,000$
 - Achieved sales of over 15,000 parts
 - Performed market analysis to identify growth pathways
 - Managed online inventory systems and business operations
