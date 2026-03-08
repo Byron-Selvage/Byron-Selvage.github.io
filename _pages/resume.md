@@ -6,6 +6,7 @@ published: true
 ---
 
 ## Education
+---
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Colorado School of Mines</b></span>
@@ -14,27 +15,28 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span>M.S. in Computational and Applied Mathematics</span>
-  <span>May 2027 (Expected)</span>
 </div>
+*May 2027 (Expected)*
 
 - 4.0 Graduate GPA
 - Focus areas include Scientific Computing, Optimization, and High-Performance Computing
 
 <div style="display: flex; justify-content: space-between;">
   <span>B.S. in Computational and Applied Mathematics</span>
-  <span>December 2025</span>
 </div>
+*December 2025*
 
 - 3.98 Undergraduate GPA, Summa Cum Laude
 - Outstanding Graduating Senior Award
 - Dean's List (5x), Member Tau Beta Pi Honor Society
 
 ## Work Experience
+---
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Graduate Research Assistant</b>, Colorado School of Mines</span>
-  <span>January 2026 - Present</span>
 </div>
+*January 2026 - Present*
 
 - Member of the Martin Group led by Dr. Eileen Martin and the Center for Wave Phenomena
 - Researching compressed data formats for geologic imaging applications
@@ -42,8 +44,8 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Research Participant Program Intern</b>, National Laboratory of the Rockies</span>
-  <span>August 2025 - September 2025</span>
 </div>
+*August 2025 - September 2025*
 
 - Contributed to SOOGO, an open-source Python library for derivative-free optimization algorithms
 - Implemented surrogate-assisted derivative-free optimization algorithms for expensive functions with hidden constraints
@@ -51,8 +53,8 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Summer Undergraduate Laboratory Intern</b>, National Laboratory of the Rockies</span>
-  <span>May 2025 - July 2025</span>
 </div>
+*May 2025 - July 2025*
 
 - Developed pyGOBLET, an open-source Python library for benchmarking global optimization algorithms
 - Designed abstract interfaces and modular software architecture to enable extendibility and user integration
@@ -63,13 +65,13 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Data Analyst</b>, Apiari LLC</span>
-  <span>Freelance</span>
 </div>
+*Freelance*
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Undergraduate Research Assistant</b>, Colorado School of Mines</span>
-  <span>August 2024 - May 2025</span>
 </div>
+*August 2024 - May 2025*
 
 - Developed dimensionality reduction tools for Active Subspace Coarse-Graining, a computational framework for studying molecular protein dynamics
 - Derived equations of motion in non-Cartesian coordinate systems for molecular dynamics simulations
@@ -78,8 +80,8 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Math Tutor</b>, Red Rocks Community College</span>
-  <span>August 2022 - Present</span>
 </div>
+*August 2022 - Present*
 
 - Assisted up to 30 students at a time in courses from Pre-Calculus to Differential Equations and Linear Algebra
 - Communicated mathematical concepts clearly to students with varying levels of experience and comfort
@@ -87,8 +89,8 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span><b>Co-Founder</b>, DBGB LLC</span>
-  <span>June 2020 - August 2024</span>
 </div>
+*June 2020 - August 2024*
 
 - Co-founded an automotive parts company, growing it from an initial investment of $300 to quarterly revenues exceeding $100,000
 - Achieved sales of over 15,000 parts
@@ -97,11 +99,12 @@ published: true
 
 
 ## Selected Projects
+---
 
 <div style="display: flex; justify-content: space-between;">
   <span>AlgoBOWL Competition Winner</span>
-  <span>Fall 2025</span>
 </div>
+*Fall 2025*
 
 - Developed a high-performance solver for the combinatorial puzzle game Same Game, maximizing game score under move and scoring constraints
 - Designed multiple algorithmic strategies with parallelized implementations to run on HPC systems
@@ -109,21 +112,22 @@ published: true
 
 <div style="display: flex; justify-content: space-between;">
   <span>Parallel PSO Algorithm</span>
-  <span>Fall 2025</span>
 </div>
+*Fall 2025*
 
 - Developed a distributed-memory parallel implementation of Particle Swarm Optimization (PSO) using MPI, enabling scalable global optimization for high-dimensional objective functions
 - Built comprehensive unit and integration test suites validating numerical correctness, MPI communication behavior, reproducibility, and consistency between serial and parallel results
 
 <div style="display: flex; justify-content: space-between;">
   <span>Medical Device Simulation</span>
-  <span>Spring 2025</span>
 </div>
+*Spring 2025*
 
 - Worked with an engineering firm to model a prototype medical device using Computational Fluid Dynamics
 - Developed an in-house PDE model and numerical solver to simulate device behavior over time
 
 ## Skills
+---
 
 **Programming Languages**  
 Python, C, C++, MATLAB, R
@@ -141,6 +145,7 @@ Git, LaTeX
 Scientific Computing, Numerical Optimization, Machine Learning, Computational Modeling, Data Science, Parallel Computing
 
 ## Selected Coursework
+---
 
 **Graduate Courses**
 - High-Performance Computing
