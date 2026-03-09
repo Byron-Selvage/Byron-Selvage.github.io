@@ -17,7 +17,7 @@ Neurons are held in an imbalanced state of ionic concentration to create a charg
 
 <center>
 <img
-    src="../assets/images/NeuralChaos/Neuron_Behavior.jpg"
+    src="/assets/images/NeuralChaos/Neuron_Behavior.jpg"
     alt="Figure 1: Neuron Behavior"
 />
 <p>Figure 1: Neuron Behavior
@@ -29,7 +29,7 @@ Neurons are held in an imbalanced state of ionic concentration to create a charg
 From studying the neurons of a squid brain, physiologists Hodgkin and Huxley were able to derive a model that describes electrical pulses flowing through a neuron. This model consists of 4 nonlinear ordinary differential equations (ODEs). This model is shown in Figure 2 below.
 <center>
 <img
-    src="../assets/images/NeuralChaos/HH.png"
+    src="/assets/images/NeuralChaos/HH.png"
     alt="Figure 2: The Hodgkin-Huxley Model"
 />
 <p>Figure 2: The Hodgkin-Huxley Model
@@ -38,7 +38,7 @@ From studying the neurons of a squid brain, physiologists Hodgkin and Huxley wer
 Here, $V$ is the measured action potential (Volts), and $m, h,$ and $n$ are dimensionless probabilities explaining channel subunit activation and deactivations. m represents the opening of positive sodium channels, $h$ controls the closing of the sodium channels, and n represents the potassium ion channels. While accurate, the Hodgkin-Huxley model is computationally expensive as it requires solving a system of 4 ODEs. Due to this, we chose to use the FitzHugh-Nagumo model, a simplified two-dimensional version of the Hodgkin-Huxley equations. This model relies on the facts that m can be approximated by its long-run value since it operates on a time scale an order of magnitude greater than the other variables and that the values of h and n have an approximately constant relationship allowing us to use the quasi-steady state approximation. The equations of the FitzHugh-Nagumo model are shown in Figure 3 below. We chose to use parameter values $\epsilon = 0.005$, $\alpha = 0.1$, and $\gamma = 0.5$ from the textbook Modeling Life by Garfinkel, A., Shevtsov, J., & Guo, Y.
 <center>
 <img
-    src="../assets/images/NeuralChaos/FHN.png"
+    src="/assets/images/NeuralChaos/FHN.png"
     alt="Figure 3: The FitzHugh-Nagumo Model"
 />
 <p>Figure 3: The FitzHugh-Nagumo Model
@@ -50,7 +50,7 @@ Here, $V$ is the measured action potential (Volts), and $m, h,$ and $n$ are dime
 To initially analyze the properties of the FitzHugh-Nagumo model, the driving term $I(t)$ was converted from a time-dependent current input to a constant value $I$. This allowed for the analysis of the system to be done using the Jacobian of the FitzHugh-Nagumo Model. Through this analysis, it was found that for small values of I the system would exhibit a single stable equilibrium point. At this point, the current is insufficient to overcome the threshold potential and the neuron settles into a slightly more sensitive state without firing. This equilibrium point (EP) and its stability were found numerically and analytically. Then, as $I(t)$ increases, a Hopf Bifurcation occurs and the EP becomes unstable and the system forms a limit cycle. This corresponds to the current triggering constant firing of the neuron. Due to this, there is a positive correlation between the magnitude of $I$ and the frequency of oscillations of the membrane potential. These dynamics are demonstrated in the animated figure below. Note that for low values of $I$, solutions converge to a single value but as $I$ increases oscillations and a limit cycle emerge.
 <center>
 <img
-    src="../assets/images/NeuralChaos/dynamics.gif"
+    src="/assets/images/NeuralChaos/dynamics.gif"
     alt="Figure 4: Autonomous Dynamics"
 />
 <p>Figure 4: Autonomous Dynamics
@@ -62,7 +62,7 @@ To initially analyze the properties of the FitzHugh-Nagumo model, the driving te
 The FitzHugh-Nagumo model exhibits chaos as the system becomes loaded with a time-dependent input current. To push the system into chaos our group added a square wave driving current to the system. For large periods the system exhibits a limit cycle as seen in the figure below.
 <center>
 <img
-    src="../assets/images/NeuralChaos/cycle.png"
+    src="/assets/images/NeuralChaos/cycle.png"
     alt="Figure 5: Limit Cycle"
 />
 <p>Figure 5: Limit Cycle
@@ -71,7 +71,7 @@ The FitzHugh-Nagumo model exhibits chaos as the system becomes loaded with a tim
 But, as the period of the square wave decreases the system begins to enter chaos, a deterministic but unpredictable state where small perturbations in initial conditions lead to extreme differences in solution trajectories. This is shown in the following figure.
 <center>
 <img
-    src="../assets/images/NeuralChaos/chaos.png"
+    src="/assets/images/NeuralChaos/chaos.png"
     alt="Figure 6: Chaos"
 />
 <p>Figure 6: Chaos
@@ -83,7 +83,7 @@ But, as the period of the square wave decreases the system begins to enter chaos
 After running the analysis of a singular neuron, a network of neurons was modeled by linking a series of neurons. The first neuron receives the same external driving current $I(t)$. Subsequent neurons receive a coupling current proportional to the voltage of the previous neuron, scaled by a constant resistance $R$. This simulates the transmission of signals between neurons via synapses. The resulting system of equations is,
 <center>
 <img
-    src="../assets/images/NeuralChaos/NEW.png"
+    src="/assets/images/NeuralChaos/NEW.png"
     alt="Figure 7: Extended FitzHugh-Nagumo"
 />
 <p>Figure 7: Extended FitzHugh-Nagumo
@@ -92,7 +92,7 @@ After running the analysis of a singular neuron, a network of neurons was modele
 When the first neuron is stimulated with a square wave with a refractory period long enough for the neuron to return to its rest state before the next pulse, the signal is transmitted through the neurons as expected. This behavior is shown in the following plot.
 <center>
 <img
-    src="../assets/images/NeuralChaos/normalChain.png"
+    src="/assets/images/NeuralChaos/normalChain.png"
     alt="Figure 8: Regular Pulse Neuron Chain"
 />
 <p>Figure 8: Regular Pulse Neuron Chain
@@ -101,7 +101,7 @@ When the first neuron is stimulated with a square wave with a refractory period 
 This process illustrates that the dynamics of the first neuron have a cascading effect. For a large period, as seen above, the behavior of each of the neurons converges to a limit cycle having stable oscillations. However, as the period of the input current decreases, chaotic dynamics emerge in the first neuron. The chaos then trickles down and stabilizes through the connected neurons as shown below.
 <center>
 <img
-    src="../assets/images/NeuralChaos/chaosChain.png"
+    src="/assets/images/NeuralChaos/chaosChain.png"
     alt="Figure 9: Quick Pulse Neuron Chain"
 />
 <p>Figure 9: Quick Pulse Neuron Chain
