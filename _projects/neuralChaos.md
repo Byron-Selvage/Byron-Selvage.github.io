@@ -3,7 +3,6 @@ layout: post
 title: Neural Chaos
 description: Investigating neuronal dynamics using the FitzHugh-Nagumo model with chaos analysis
 ---
-# Neural Chaos
 A Mathematical Biology project in collaboration with [Nevaeh Ahrendsen](https://www.linkedin.com/in/nevaeh-ahrendsen-b75a38270/), [Jenna Ramsey-Rutledge](https://www.linkedin.com/in/jenna-ramsey-baa016156/), and [Kyle Sperber](https://www.linkedin.com/in/kyle-sperber-55572b240/).
 
 ## Abstract
