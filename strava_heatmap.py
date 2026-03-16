@@ -57,6 +57,17 @@ STATS_START_MARKER = "<!-- STATS:START -->"
 STATS_END_MARKER   = "<!-- STATS:END -->"
 
 
+def require_non_empty_env(var_name: str) -> str:
+    """Return a required environment variable or raise a helpful error."""
+    value = os.environ.get(var_name, "").strip()
+    if not value:
+        raise RuntimeError(
+            f"Missing required environment variable: {var_name}. "
+            "Set it in your shell or GitHub Actions secrets."
+        )
+    return value
+
+
 def empty_cache() -> dict:
     """Return the default cache schema."""
     return {"version": CACHE_VERSION, "activities": {}}
@@ -74,7 +85,12 @@ def get_access_token() -> str:
         "refresh_token": REFRESH_TOKEN,
         "grant_type":    "refresh_token",
     })
-    resp.raise_for_status()
+    if not resp.ok:
+        # Include Strava response body to make auth/setup errors actionable.
+        raise RuntimeError(
+            "Failed to exchange Strava refresh token "
+            f"(HTTP {resp.status_code}): {resp.text}"
+        )
     token = resp.json()["access_token"]
     print("Access token obtained.")
     return token
@@ -393,6 +409,11 @@ def build_heatmap(rides_data: list[dict], output_path: str) -> dict:
 # ---------------------------------------------------------------------------
 
 def main():
+    global CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN
+    CLIENT_ID = require_non_empty_env("STRAVA_CLIENT_ID")
+    CLIENT_SECRET = require_non_empty_env("STRAVA_CLIENT_SECRET")
+    REFRESH_TOKEN = require_non_empty_env("STRAVA_REFRESH_TOKEN")
+
     token = get_access_token()
     rides = get_outdoor_rides(token)
 

@@ -29,6 +29,18 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Validate required Strava secrets
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: |
+          missing=0
+          [ -z "$STRAVA_CLIENT_ID" ] && echo "::error::Missing secret STRAVA_CLIENT_ID" && missing=1
+          [ -z "$STRAVA_CLIENT_SECRET" ] && echo "::error::Missing secret STRAVA_CLIENT_SECRET" && missing=1
+          [ -z "$STRAVA_REFRESH_TOKEN" ] && echo "::error::Missing secret STRAVA_REFRESH_TOKEN" && missing=1
+          [ "$missing" -eq 1 ] && exit 1 || true
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
