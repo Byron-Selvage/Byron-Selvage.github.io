@@ -396,6 +396,16 @@ def build_heatmap(rides_data: list[dict], output_path: str) -> dict:
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
     m.save(output_path)
+    with open(output_path, "r", encoding="utf-8") as fh:
+        _html = fh.read()
+    _mobile_patch = (
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+        '<style>html, body { height: 100% !important; }</style>\n'
+    )
+    _html = _html.replace("</head>", _mobile_patch + "</head>", 1)
+    with open(output_path, "w", encoding="utf-8") as fh:
+        fh.write(_html)
+
     print(f"Heatmap saved → {output_path}")
     return {
         "points_all": rendered_all,
