@@ -17,7 +17,7 @@ In December 2025, I graduated from Colorado School of Mines summa cum laude with
 
 Some fun facts about me:
 - I can juggle
-- I'm a cyclist with over 17,000mi logged on Strava
+- I'm a cyclist - check out my [ride heatmap](/heatmap/)
 - I love bad movies
 
 Thanks for checking out my website! While you're here, check out my [projects](/projects/) and [resume](/resume/).

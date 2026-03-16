@@ -1,0 +1,78 @@
+name: Update Strava Heatmap
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - strava_heatmap.py
+      - _pages/heatmap.md
+      - .github/workflows/update.yml
+  workflow_dispatch:
+
+jobs:
+  update-heatmap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install folium requests
+
+      - name: Generate heatmap and page stats
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          HEATMAP_OUTPUT: assets/heatmap.html
+          STRAVA_CACHE_PATH: assets/strava_cache.json
+          HEATMAP_MARKDOWN_PATH: _pages/heatmap.md
+        run: python strava_heatmap.py
+
+      - name: Commit and push generated updates
+        id: commit_changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          [ -f assets/heatmap.html ] && git add assets/heatmap.html
+          [ -f assets/strava_cache.json ] && git add assets/strava_cache.json
+          [ -f _pages/heatmap.md ] && git add _pages/heatmap.md
+
+          if git diff --cached --quiet; then
+            echo "Heatmap unchanged - nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "chore: update strava heatmap [skip ci]"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger site publish workflow
+        if: steps.commit_changes.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const refName = context.ref.replace('refs/heads/', '');
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: refName,
+            });
