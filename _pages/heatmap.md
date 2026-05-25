@@ -28,7 +28,7 @@ All my outdoor rides, visualized. Updated automatically every week.
 - Total elevation gain: **276543 ft**
 - Total elapsed time: **388.4 h**
 - GPS points plotted: **1,254,933**
-- Last updated: **May 18th, 2026**
+- Last updated: **May 25th, 2026**
 <!-- STATS:END -->
 
 <p style="font-size: 0.8em; color: #888; margin-top: 8px;">
