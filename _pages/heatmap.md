@@ -23,12 +23,12 @@ All my outdoor rides, visualized. Updated automatically every week.
 <!-- STATS:START -->
 ## Ride Statistics
 
-- Total rides: **199**
-- Total distance: **4999.0 mi**
-- Total elevation gain: **290206 ft**
-- Total elapsed time: **409.9 h**
-- GPS points plotted: **1,326,417**
-- Last updated: **June 29th, 2026**
+- Total rides: **201**
+- Total distance: **5062.9 mi**
+- Total elevation gain: **292695 ft**
+- Total elapsed time: **414.1 h**
+- GPS points plotted: **1,340,597**
+- Last updated: **July 6th, 2026**
 <!-- STATS:END -->
 
 <p style="font-size: 0.8em; color: #888; margin-top: 8px;">
